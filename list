@@ -1,0 +1,12 @@
+n=int(input())
+li=list(int(x) for x in input().split())
+mi=[]
+for i in range(len(li)):
+    if(li[i]==0):
+        mi.append(li[i])
+for i in range(len(li)):
+
+    if(li[i]==1):
+        mi.append(li[i])
+for j in mi:
+    print(j,end=" ")
