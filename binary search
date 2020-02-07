@@ -1,0 +1,16 @@
+def binary_search(li,element):
+	start=0
+	end=len(li)-1
+	while(start<=end):
+		mid=(start+end)//2
+		if(li[mid]==element):
+			return mid
+		elif(li[mid]<=element):
+			start=mid+1
+		else:
+			end=mid-1
+	return -1
+
+li=list(int(x) for x in input("enter the number").split())
+element=int(input("enter the element you need to search"))
+print(binary_search(li,element))
